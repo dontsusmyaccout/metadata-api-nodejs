@@ -30,7 +30,7 @@ app.get('/api/token/:token_id', function(req, res) {
       'role': person.role,
       'hair': person.hair
     },
-    'image': `${HOST}/images/${tokenId}.png`
+    'image': `${HOST}/images/lapunks/${tokenId}.png`
   }
   res.send(data)
 })
