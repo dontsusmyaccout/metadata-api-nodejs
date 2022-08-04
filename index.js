@@ -22,15 +22,19 @@ app.get('/api/token/:token_id', function(req, res) {
   const tokenId = parseInt(req.params.token_id).toString()
   const person = db[tokenId]
   const data = {
-    'name': person.name,
+    'name': tokenId,
     'attributes': {
       'background': person.background,
-      'skull': person.skull,
+      'chain': person.chain,
+      'ears': person.ears,
       'eyes': person.eyes,
-      'role': person.role,
-      'hair': person.hair
+      'ai': person.ai,
+      'hair': person.hair,
+      'hat': person.hat,
+      'collar': person.neck,
+      'tattoo': person.tattoo
     },
-    'image': `${HOST}/images/lapunks/${tokenId}.png`
+    'image': `${HOST}/${tokenId}.png`
   }
   res.send(data)
 })
