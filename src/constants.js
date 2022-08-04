@@ -1,4 +1,4 @@
-const HOST = 'https://boredaiyachtclub.herokuapp.com'
+const HOST = 'https://astgik.com'
 
 module.exports = {
   HOST

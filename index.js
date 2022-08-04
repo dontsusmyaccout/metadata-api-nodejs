@@ -34,7 +34,7 @@ app.get('/api/token/:token_id', function(req, res) {
       'collar': person.neck,
       'tattoo': person.tattoo
     },
-    'image': `${HOST}/${tokenId}.png`
+    'image': `${HOST}/images/boredaiyachtclub/${tokenId}.png`
   }
   res.send(data)
 })
